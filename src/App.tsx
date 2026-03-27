@@ -9,7 +9,7 @@ import {
   Bookmark, 
   Heart, 
   Users2, 
-  Settings, 
+  LogIn,
   Search, 
   Link as LinkIcon, 
   Languages, 
@@ -818,21 +818,13 @@ export default function App() {
           </button>
 
           <div className="flex items-center gap-3 bg-zinc-100/50 dark:bg-dark-border/50 px-4 py-2 rounded-2xl border border-zinc-200/50 dark:border-dark-border">
-            <div className="w-8 h-8 rounded-full bg-zinc-200 dark:bg-zinc-700 overflow-hidden">
-              <img 
-                src="https://picsum.photos/seed/user/100/100" 
-                alt="Profile" 
-                className="w-full h-full object-cover"
-                referrerPolicy="no-referrer"
-              />
-            </div>
             <div className="hidden md:block">
               <p className="text-xs font-bold text-zinc-800 dark:text-dark-text leading-none mb-0.5">Thư viện của tôi</p>
               <p className="text-[10px] text-zinc-500 dark:text-dark-muted leading-none">{stories.length} bộ sưu tập</p>
             </div>
           </div>
           <button className="p-2 text-zinc-400 dark:text-dark-muted hover:text-rose-500 transition-colors">
-            <Settings className="w-5 h-5" />
+            <LogIn className="w-5 h-5" />
           </button>
         </div>
       </header>
